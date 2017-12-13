@@ -51,6 +51,22 @@ public class ArrayListDemo {
 		
 		System.out.println(list);
 		System.out.println(al);
+		
+		//list iterator
+		ListIterator iterator = list.listIterator();
+		System.out.println("Elements in forward direction");
+         
+        	while (iterator.hasNext())
+        	{
+            	System.out.println(iterator.next());
+        	}
+         
+        	System.out.println("Elements in backward direction");
+         
+        	while (iterator.hasPrevious())
+        	{
+            	System.out.println(iterator.previous());
+        	}
 	}
 
 }
