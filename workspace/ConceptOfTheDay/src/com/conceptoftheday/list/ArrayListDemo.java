@@ -20,6 +20,11 @@ public class ArrayListDemo {
 		list.remove(1);
 		
 		System.out.println(list.size());
+		
+		list.add("");
+		list.add("");
+		
+		System.out.println(list.size());
  
 	}
 
