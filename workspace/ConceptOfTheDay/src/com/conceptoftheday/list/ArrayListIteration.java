@@ -2,6 +2,7 @@ package com.conceptoftheday.list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class ArrayListIteration {
 
@@ -26,7 +27,18 @@ public class ArrayListIteration {
 			
 			it.remove();
 		}
-
+		
+		//Using ListIterator
+		ListIterator<String> lit = list.listIterator();
+		
+		while(lit.hasPrevious())
+		{
+			System.out.println(lit.hasNext());
+		}
+		
+		while(lit.hasNext()){
+			System.out.println(lit.next());
+		}
 	}
 
 }
