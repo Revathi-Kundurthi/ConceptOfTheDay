@@ -26,18 +26,20 @@ public class ArrayListIteration {
 			System.out.println(it.next());
 			
 			it.remove();
-		}
+		} 
 		
 		//Using ListIterator
 		ListIterator<String> lit = list.listIterator();
 		
-		while(lit.hasPrevious())
-		{
-			System.out.println(lit.hasNext());
-		}
-		
 		while(lit.hasNext()){
+			
 			System.out.println(lit.next());
+		} 
+		
+		//Using enhanced for loop
+		for(String element:list){
+			
+			System.out.println(element);
 		}
 	}
 
