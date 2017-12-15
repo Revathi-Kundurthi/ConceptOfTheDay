@@ -62,6 +62,9 @@ public class StudentHashSet {
 		
 		Iterator<StudentHashSet> it = set.iterator();
 		
+		//HashSet generates concurrentmodificationexception when we modify HashSet after creating iterator.
+		set.add(new StudentHashSet("Srija", 225, "IT"));     
+		
 		while(it.hasNext()){
 			StudentHashSet student = (StudentHashSet) it.next();
 			System.out.println(student);
