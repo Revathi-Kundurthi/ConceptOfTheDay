@@ -66,7 +66,6 @@ public class StudentHashSet {
 			StudentHashSet student = (StudentHashSet) it.next();
 			System.out.println(student);
 		}
-		
 
 	}
 
